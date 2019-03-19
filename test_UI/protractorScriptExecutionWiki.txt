@@ -1,0 +1,24 @@
+﻿How to execute the protractor test scripts?
+Pre-requisites:
+1. Nodes js should be installed in the system.
+2. npm is the default package manager for the JavaScript runtime environment Node.js. Install npm using npm install –g npm
+
+
+Steps:
+Step 1: Install the below mentioned node modules in local workspace:
+1. Install Protractor by running 
+   * npm install protractor –save –dev
+1. Install webdriver-manager for selenium server and browser driver manager
+   * npm install webdriver-manager --save-dev
+1. Install Cucumber and protractor-cucumber-framework packages
+   * npm install -cucumber –save-dev
+   * npm install --save-dev protractor-cucumber-framework.
+1. Install chai for assertions
+   * npm install chai –save-dev 
+1. Install grunt to create a task for CI 
+   * npm install grunt–save-dev
+Step 2: Take latest code from repository and put it on local workspace (e.g.  .\node_modules\test\).
+Step 3: Start selenium standalone server running the command:
+java -Dwebdriver.chrome.driver=<Absolute/relative path>\chromedriver_2.40.exe exe -jar =<Absolute/relative path>\\selenium-server-standalone-3.11.0.jar -port 4444
+(If needed other browser driver location also can be updated here)
+Step 4: From your local workspace call protractor with required config file to be executed, e.g. D:\Workspace> protractor node_modules\test\protractor-config.js.
