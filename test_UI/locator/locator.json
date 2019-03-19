@@ -1,0 +1,16 @@
+{
+    "homePage": {
+        "citySearchField": "#searchform #q",
+        "searchButton": "#searchform button",
+        "noResultError": "#forecast_list_ul div",
+        "closeError": "#forecast_list_ul .close",
+        "searchResultCard": "#forecast_list_ul .table",
+        "serachResultTemperature": "#forecast_list_ul .badge.badge-info"
+    },
+    "createAccount": {
+        "createNewAccountFormHeader": ".sign-form h3",
+        "usernameField": "#user_username",
+        "userEmailField": "#user_email",
+        "userPassword": "#user_password"
+    }
+}
