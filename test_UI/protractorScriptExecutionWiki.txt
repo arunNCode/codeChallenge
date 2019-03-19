@@ -22,3 +22,7 @@ Step 3: Start selenium standalone server running the command:
 java -Dwebdriver.chrome.driver=<Absolute/relative path>\chromedriver_2.40.exe exe -jar =<Absolute/relative path>\\selenium-server-standalone-3.11.0.jar -port 4444
 (If needed other browser driver location also can be updated here)
 Step 4: From your local workspace call protractor with required config file to be executed, e.g. D:\Workspace> protractor node_modules\test\protractor-config.js.
+
+P.S - If provided with more time:
+- I would have used page object model framework by keeping the page specific interactions and functions in the respective page file. 
+- Protractor image comparison library which compares the actual UI with an already captured screenshot which helps to identify the User Interface  issues, I would have added that also for UI checks.
