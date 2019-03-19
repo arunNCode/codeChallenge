@@ -1,3 +1,4 @@
+// common functions which are required for element interactions
 var protractor = require('protractor')
 var EC = protractor.ExpectedConditions;
 
