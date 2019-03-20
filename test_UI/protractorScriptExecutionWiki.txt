@@ -6,17 +6,22 @@ Pre-requisites:
 
 Steps:
 Step 1: Install the below mentioned node modules in local workspace:
-1. Install Protractor by running 
+Install Protractor by running 
    * npm install protractor –save –dev
-1. Install webdriver-manager for selenium server and browser driver manager
+Install webdriver-manager for selenium server and browser driver manager
    * npm install webdriver-manager --save-dev
-1. Install Cucumber and protractor-cucumber-framework packages
+Install Cucumber and protractor-cucumber-framework packages
    * npm install -cucumber –save-dev
    * npm install --save-dev protractor-cucumber-framework.
-1. Install chai for assertions
+Install chai for assertions
    * npm install chai –save-dev 
-1. Install grunt to create a task for CI 
-   * npm install grunt–save-dev
+ Install grunt to create a task for CI 
+   * npm install grunt –save-dev
+  Install grunt-protractor-runner to execute protractor task in CI
+   * npm install grunt-protractor-runner –save-dev
+ Install grunt-webdriver-manager to mange webdriver and selenium instance 
+   * npm install grunt-webdriver-manager –save-dev
+  
 Step 2: Take latest code from repository and put it on local workspace (e.g.  .\node_modules\test\).
 Step 3: Start selenium standalone server running the command:
 java -Dwebdriver.chrome.driver=<Absolute/relative path>\chromedriver_2.40.exe exe -jar =<Absolute/relative path>\\selenium-server-standalone-3.11.0.jar -port 4444
@@ -26,3 +31,5 @@ Step 4: From your local workspace call protractor with required config file to b
 P.S - If provided with more time:
 - I would have used page object model framework by keeping the page specific interactions and functions in the respective page file. 
 - Protractor image comparison library which compares the actual UI with an already captured screenshot which helps to identify the User Interface  issues, I would have added that also for UI checks.
+
+CI - Grunt task to manage webdriver tasks is pending (Alternatively we can use shell script to start the webdriver in a CI-CD environment) 
