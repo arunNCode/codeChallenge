@@ -27,6 +27,7 @@ Step 3: Start selenium standalone server running the command:
 java -Dwebdriver.chrome.driver=<Absolute/relative path>\chromedriver_2.40.exe exe -jar =<Absolute/relative path>\\selenium-server-standalone-3.11.0.jar -port 4444
 (If needed other browser driver location also can be updated here)
 Step 4: From your local workspace call protractor with required config file to be executed, e.g. D:\Workspace> protractor node_modules\test\protractor-config.js.
+Step 5: Integration with CI pipeline job can be done two ways: create a shell script which can be added(in Jenkins job) to start the selenium server or a grunt task  (task runner for JS) can  be added . Refer to the grunt file available. Command grunt pTest will execute the tasks (starting of server and executing the config files defined)
 
 P.S - If provided with more time:
 - I would have used page object model framework by keeping the page specific interactions and functions in the respective page file. 
